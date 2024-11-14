@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.Movie-Navbar{
+    display:grid;
+    grid-template-columns:repeat(11,150px);
+    width:99.8%;
+    align-items:center;
+    justify-content:center;
+    padding:10px;
+    background-color: #040f1d;
+    transform:translateX(-9px);
+}
+
+
+.active {
+    color:#4FA3FF;
+    font-weight:bold;
+    letter-spacing:1px;
+    border-bottom:1px solid #4FA3FF;;
+}
+
+.nav-class{
+    color:white;
+    letter-spacing:0.5px;
+}
+
+.Movie-Navbar ul  {
+    list-style-type:none;
+    grid-column:3;
+    transform:translateX(5rem);
+}
+.Movie-Navbar ul li {
+    transform:translateX(-2rem);
+    font-family: 'Roboto', sans-serif;
+}
+.Movie-Navbar a{
+    text-decoration:none;
+    padding:13px;
+}
+.Movie-Navbar a:focus{
+    outline:none;
+}
+
+.Movie-Navbar a:hover{
+    color:#4FA3FF;
+}
+.Movie-Navbar .Title{
+    transform:translateX(8rem);
+    letter-spacing:1.3px;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+.Movie-Navbar .Title .Part2{
+    color:#4FA3FF;
+    font-weight:bold;
+}
+
+.Fauser{
+    display:flex;
+    grid-column:10;
+    font-size:17px;
+    color:white;
+    cursor: pointer;
+}
+.Fauser .Split{
+    margin:13px;
+}
+.ShoppingCart{
+    color:#4FA3FF;
+    font-weight:bold;
+}
+
+/* STARTING INPUT SEARCH */
+.InputSearch{
+    grid-column:7;
+    transform:translateX(5rem);
+}
+.InputSearch input{
+    width:20rem;
+    height:2.7rem;
+    border:none;
+    border-radius:5px;
+    text-indent:1rem;
+    box-shadow:0.8px 0.8px 0.8px 0.8px #4FA3FF;
+    outline: none;
+}
+.InputSearch input:focus{
+    box-shadow:none;
+}
+
+.InputSearch input::placeholder{
+    color:black;
+}
+
+.Default{
+    display:flex;
+}
