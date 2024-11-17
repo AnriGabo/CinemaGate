@@ -1,14 +1,15 @@
 
 
 
-.batmanimage{
+.SlaiderContaienr{
     display:flex;
     align-items:center;
     overflow-x:hidden;
     white-space:nowrap;
+    scroll-snap-type: x mandatory;
 }
 img{
-    width:105vw;
+    width: auto;
     height:100vh;
     background-size:cover;
     background-repeat:no-repeat;
@@ -16,14 +17,13 @@ img{
     flex: 0 0 auto;
     scroll-snap-align: start;
     margin:1rem;
-    width: auto;
-    border-radius: 10px;;
+    border-radius: 10px;
 }
 
 
 .Right{
     position:absolute;
-    right:4rem;
+    right:5.5rem;
     width:2.5rem;
     height:2rem;
     border-radius:5px;
@@ -33,12 +33,16 @@ img{
     background-color:#192d47;
     color:white;
     font-weight:bold;
+    transform:translateY(-5rem);
 }
 .Right:focus{
     outline:none;
+    background-color:white;
+    color:black;
+    font-weight:bold;
 }
 .Left{
-    position:absolute;
+    position:absolute  ;
     left:2.4rem;
     width:2.5rem;
     height:2rem;
@@ -49,4 +53,75 @@ img{
     background-color:#192d47;
     color:white;
     font-weight:bold;
+    transform:translateY(-5rem);
 }
+.Left:focus{
+    outline:none;
+    background-color:white;
+    color:black;
+    font-weight:bold;
+}
+
+.MovieDescription{
+    position:relative;
+    width:fit-content;
+    transform:translateY(-20rem) translateX(5rem);
+    z-index:1000;
+    color:white;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.overlay{
+    position:relative;
+    transform:translateY(-20.5rem) translateX(5rem);
+}
+.overlay button{
+    margin:10px;
+    padding:12px;
+    width:10rem;
+    color:black;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;  
+}
+.overlay .WatchNow{
+    background-color:white;
+    color:black;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.overlay .LearnMore{
+    background-color:#040f1d;
+    color:red;
+    font-weight:bold;
+    letter-spacing:1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.overlay .WatchNow:hover{
+    background-color:#040f1d;
+    color:red;
+    font-weight:bold;
+    transition:all 0.3s ease;
+    outline:none;
+}
+
+.overlay .LearnMore:hover{
+    background-color:white;
+    color:black;
+    font-weight:bold;
+    transition:all 0.3s ease;
+    outline:none;
+}
+
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+

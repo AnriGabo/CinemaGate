@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { faBell  } from '@fortawesome/free-solid-svg-icons';
+import { faBell,faTheaterMasks  } from '@fortawesome/free-solid-svg-icons';
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -13,6 +13,7 @@ export default function Navbar() {
       {id:0, icon:faUser},
       {id:1, icon:faShoppingCart},
       {id:2, icon:faBell},
+      {id:3, icon:faTheaterMasks },
     ])
     return (
        <div>
